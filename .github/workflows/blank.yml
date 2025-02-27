@@ -6,8 +6,8 @@ jobs:
   check-ip:
     runs-on: self-hosted
     steps:
-      - name: Get Public IP
-        run: logoff
+      - name: Who am I
+        run: whoami
 
 
 
