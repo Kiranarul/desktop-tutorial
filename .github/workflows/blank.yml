@@ -1,0 +1,10 @@
+name: Simple Workflow
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: self-hosted  # Make sure it runs on your runner
+    steps:
+      - name: Run a test command
+        run: echo "Self-hosted runner is working!"
