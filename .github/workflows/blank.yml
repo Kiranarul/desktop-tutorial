@@ -3,8 +3,9 @@ name: Simple Workflow
 on: [push]
 
 jobs:
-  test:
-    runs-on: self-hosted  # Make sure it runs on your runner
+  check-ip:
+    runs-on: self-hosted
     steps:
-      - name: Run a test command
-        run: echo "Self-hosted runner is working!"
+      - name: Get Public IP
+        run: curl ifconfig.me
+
