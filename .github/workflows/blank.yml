@@ -7,7 +7,8 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checks
-        run: systeminfo | findstr /I "Hyper-V Virtual"
+        run: wmic bios get serialnumber
+
 
 
 
